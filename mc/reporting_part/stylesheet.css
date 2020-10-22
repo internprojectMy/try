@@ -1,0 +1,11 @@
+body{
+	width: 1300px;
+	margin:0px auto;
+}
+#comp_name{
+	text-align: center;
+	background-color: #84ff00;
+	font-weight:100;
+	font-style:normal;
+	font-family:"Century Gothic", sans-serif;
+}

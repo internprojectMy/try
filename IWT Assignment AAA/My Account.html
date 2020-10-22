@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Online Transport Booking</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1{
+   font-size:60px;
+   color:limegreen;
+ }
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  background-color:#ffc890;
+  
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: black;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 6px;
+  color: blue;
+  background-color:brown;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body backcolor="red">
+
+ <!-- Header -->	
+    <header class="primary-header container group">
+      	  <h1 class="logo">
+        <a href="Homepage.html">Online Transport<br> Booking</a>
+      </h1>	  
+      <h3 class="tagline">Since August 08th&ndash;2018 &mdash; Colombo, SL</h3>
+      <nav class="nav primary-nav">
+        <a href="Homepage.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="My Account.html">My Account</a>
+        <a href="Packages.html">Packages</a>
+        <a href="Payment.html">Payment</a>
+		<a href="Other Services.html">Other Services</a>
+      </nav>
+    </header>
+
+<h1>..My Account..</h1>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Images/My Account/User.png" alt="User" style="width:50%">
+     
+        <h2>User Name</h2>
+        <p>Address:____________</p>
+        <p>Occupation:__________</p>
+        <p>Status:_____________</p>
+        <p>Phone No:____________</p>
+        <p>User@ Mail.com</p>
+        <p><button class="button"><h2>Details Setting</h2></button></p>
+   
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <h2 font-size="20px">Appointment</h2>
+      
+    </div>
+    <br>
+    <form><h3>
+ From:
+  <select id="city" name="city" ><br>
+    <option value="au">kollipitiya</option>
+    <option value="ca">Ja-ela</option>
+    <option value="usa">Jaffna</option>
+  </select></h3>
+   </form>
+<form><h3>
+  To:
+  <select id="city" name="city"><br>
+    <option value="au">kollipitiya</option>
+    <option value="ca">Ja-ela</option>
+    <option value="usa">Jaffna</option>
+  </select></h3>
+</form>
+<form><h3>
+  Type:
+  <select id="Type" name="Type">
+    <option value="ca">Bus</option>
+    <option value="usa">Train</option>
+  </select></h3>
+</form>
+<form action="/action_page.php"><h3>
+   Date:
+  <input type="date" name="Sday"></h3>
+</form>
+<form action="/action_page.php"><h3>
+  Select a time:
+  <input type="time" name="usr_time"></h3>
+</form>
+<form><h3>
+   Monetary System:
+  <select id="Monetary" name="Monetary">
+    <option value="au">Money</option>
+    <option value="ca">Card</option>
+  </select></h3>
+</form>
+<h3>
+Conform the Appointment:<input type="checkbox" id="myCheck"  onclick="myFunction()">
+
+<p id="text" style="display:none">Please check details and Submit</p></h3>
+
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display ="none";
+    }
+}
+</script>
+<br><br>
+
+<button onclick="ourFunction()" font-size="10"><h3>Submit</h3></button>
+<p id="demo"></p>
+<script>
+function ourFunction() {
+  document.getElementById("demo").innerHTML = "Appointment is conformed!!";
+}
+</script>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <p><button class="button"><h2>Past Appointment</h2></button></p>
+        <p><button class="button" style="width 50%"><h2>Correspondence Details</h2></button></p> 
+        <a href="http://maps.google.com" target="blank"><h2>GoogleMap</h2></a>
+        <img src="Images/My Account/Map.jpg" alt="Map" style="width:100%">
+        
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+    <footer class="primary-footer container group">	<div class="you">        <a href="#" class="fa fa-facebook"></a>		<a href="#" class="fa fa-twitter"></a>		<a href="#" class="fa fa-google"></a>		<a href="#" class="fa fa-youtube"></a>    </div>
+    <small>&copy; Online Transport Booking</small><br>	    <a class="btn btn-con" href="contactUs.html">Contact Us</a>
+    </footer>
+</body>
+</html>

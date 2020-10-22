@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Transport Booking</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+h1{
+   font-size:70px;
+   color:red;
+   
+  }
+
+div.b {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    height: 600px;
+    border: 3px solid red;
+    background-color:pink;
+}  
+
+
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px #992;
+}
+
+.button:hover {background-color: royalblue
+}
+
+.button:active {
+  background-color: blue;
+  box-shadow: 0 0px #664;
+  transform: translateY(4px);
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color:black;
+}
+</style>
+</head>
+<body background="new1.jpg">
+<!-- Header -->	
+    <header class="primary-header container group">
+      	  <h1 class="logo">
+        <a href="Homepage.html">Online Transport<br> Booking</a>
+      </h1>	  
+      <h3 class="tagline">Since August 08th&ndash;2018 &mdash; Colombo, SL</h3>
+      <nav class="nav primary-nav">
+        <a href="Homepage.html">Home</a>
+        <a href="About Us.html">About Us</a>
+        <a href="My Account.html">My Account</a>
+        <a href="Packages.html">Packages</a>
+        <a href="Payment.html">Payment</a>
+		<a href="Other Services.html">Other Services</a>
+      </nav>
+    </header>
+
+<center><h1>..Charges...</h1></center>
+<div class="b"><h2>Advertisment</h2>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:azure;">
+    <h2>Route Charges</h2>
+    <button class="button">Bus Fare</button>
+    <br><br><br>
+     <button class="button">Train Fare</button>
+  </div>
+  <div class="column" style="background-color:azure;">
+    <h2>Other Service Charges</h2>
+    <button class="button">ServiceNo1</button>
+    <br><br>
+     <button class="button">Service No2</button>
+     <br><br>
+     <button class="button">Service No3</button>    
+  </div>
+  <div class="column" style="background-color:white;">
+   <img src="Images/Charges/Charges.jpg" alt="space" style="width:100%">
+   </div>
+</div>
+<br><br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Location</h3>
+      <ul>
+      <li><p>Ella</p></li>
+      <li><p>Pinnawala Elephant Orphange</p></li>
+      <li><p>Mirisa</p></li>
+      <li><a href="http://maps.google.com"><b>Google Map</b></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Hotels</h3>
+      <ul>
+      <li><a href="http://www.shangri-la.com">Shangri-La Hotel</a></li><br>
+      <li><a href="http://www.cinnamonhotels.com/en/cinnamongrandcolombo">Cinnaman Grand Colombo</a></li><br>
+      <li><a href="http://www.watergardensigiriya.com">Water Garnden Sigiriya</a></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Supermarkets</h3>
+      <ul>
+      <li><a href="http://www.laugfs.lk">LAUGFS supermarket</a></li><br>
+      <li><a href="http://www.keellssuper.com">KeellsSuper</a></li><br>
+      <li><a href="http://www.arpico.com">Arpico Supercenter</a></li><br>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+    <footer class="primary-footer container group">	<div class="you">        <a href="#" class="fa fa-facebook"></a>		<a href="#" class="fa fa-twitter"></a>		<a href="#" class="fa fa-google"></a>		<a href="#" class="fa fa-youtube"></a>    </div>
+    <small>&copy; Online Transport Booking</small><br>	    <a class="btn btn-con" href="contactUs.html">Contact Us</a>
+    </footer>
+
+</body>
+</html>
